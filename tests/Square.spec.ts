@@ -1,4 +1,4 @@
-import { Square, Square2 } from "../src/Square";
+import { Square } from "../src/Square";
 
 describe("Square", () => {
     test("Should return area", () => {
@@ -8,6 +8,10 @@ describe("Square", () => {
         expect(new Square(10).perimeter()).toEqual(40);
     });
 });
+
+// More descriptive Test Names:
+    // Should return Area of Square of Side 10 - 100
+    // Area Should Return 100
 
 // describe("Square 2", () => {
 //     test("Should return area", () => {

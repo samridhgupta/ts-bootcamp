@@ -1,7 +1,5 @@
-
-
 // Implement a Geometric Rectangle
-// What behaviour does a Rectangle have ? (area and perimeter)
+// What behavior does a Rectangle have ? (area and perimeter)
 // Write unit tests to verify your Rectangle actually works…
 
 export class Rectangle {
@@ -10,15 +8,15 @@ export class Rectangle {
 
     constructor(height: number, width: number) {
         this.height = height;
-        this.width = width
+        this.width = width;
     }
 
     area(): number {
-        return this.height * this.width
+        return this.height * this.width;
     }
 
     perimeter(): number {
-        return (this.height + this.width) * 2
+        return (this.height + this.width) * 2;
     }
 }
 

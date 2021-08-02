@@ -1,5 +1,5 @@
 // Keeping the existing code working, implement a Square
-// What behaviour does a Square have ? (area and perimeter)
+// What behavior does a Square have ? (area and perimeter)
 
 import { Rectangle } from "./Rect";
 export class Square extends Rectangle {
