@@ -1,5 +1,9 @@
 
 
+// Implement a Geometric Rectangle
+// What behaviour does a Rectangle have ? (area and perimeter)
+// Write unit tests to verify your Rectangle actually works…
+
 export class Rectangle {
     height: number;
     width: number;
@@ -18,7 +22,7 @@ export class Rectangle {
     }
 }
 
-export const generateRectangle = (height: number, width: number) => ({
-    area: height * width,
-    perimeter: 2 * (height + width)
-})
+// export const generateRectangle = (height: number, width: number) => ({
+//     area: height * width,
+//     perimeter: 2 * (height + width)
+// })
