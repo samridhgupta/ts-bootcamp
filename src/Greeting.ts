@@ -9,3 +9,4 @@ export class Greeting {
         return `hello ${this.name}`
     }
 }
+
