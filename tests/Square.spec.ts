@@ -1,4 +1,5 @@
-import { Square } from "../src/Square";
+import { Rectangle } from "../src/Rect";
+import { Square, Square2 } from "../src/Square";
 
 describe("Square", () => {
     test("Should return area", () => {
@@ -15,11 +16,20 @@ describe("Square", () => {
 
 describe("Square: Given side is 10", () => {
     test("Should return area 100", () => {
-        expect(new Square(10).area()).toEqual(100);
+        expect(new Square2(10).area()).toEqual(100);
     });
     test("Should return Perimeter 40", () => {
-        expect(new Square(10).perimeter()).toEqual(40);
+        expect(new Square2(10).perimeter()).toEqual(40);
     });
+
+
+    // Not need to check now for Square2 Class
+    // test("Is it a Square Anymore?", () => {
+
+    //     var square: Rectangle = new Square(3);
+    //     var scaleSquare: Rectangle = square.scaleHeightWise(10);
+
+    // })
 });
 
 // TDD - Approach  

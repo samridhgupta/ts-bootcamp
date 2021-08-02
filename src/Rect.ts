@@ -2,7 +2,9 @@
 // What behavior does a Rectangle have ? (area and perimeter)
 // Write unit tests to verify your Rectangle actually works…
 
-export class Rectangle {
+import { Shape } from "./Shape";
+
+export class Rectangle implements Shape {
     private readonly height: number;
     private readonly width: number;
     // Made the attribute to be Private and Readonly
@@ -13,6 +15,7 @@ export class Rectangle {
     }
     area = (): number => this.height * this.width;
     perimeter = (): number => (this.height + this.width) * 2;
+    scaleHeightWise = (factor: number): Rectangle => new Rectangle(this.height + this.height * factor / 100, this.width)
 }
 
 // export const generateRectangle = (height: number, width: number) => ({
