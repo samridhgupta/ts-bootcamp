@@ -3,7 +3,9 @@
 // -40C = -40 F
 // 212 F = 100C
 
-import { CELSIUS, FAHRENHEIT, TemperatureUnit } from "../src/Temperature";
+import { TemperatureUnit } from "../src/Temperature/TemperatureUnit";
+import { CELSIUS, FAHRENHEIT } from "../src/Temperature/TemperatureMetricType";
+
 
 // describe("Temperature: Converter", () => {
 //     test("Convert 0C to F = 32F", () => {
@@ -75,13 +77,6 @@ import { CELSIUS, FAHRENHEIT, TemperatureUnit } from "../src/Temperature";
 
 describe("Temperature:2 Converter", () => {
     test("Convert 0C to F = 32F", () => {
-        // const celsius = new MetricType("C", 1, 0);
-        // const fahrenheit = new MetricType("F", 5 / 9, 32);
-        // const Kelvin = new MetricType("K", 273.15, 0);
         expect(new TemperatureUnit(0, CELSIUS).in(FAHRENHEIT)).toEqual(new TemperatureUnit(32, FAHRENHEIT));
     });
-
-    // test("Convert Invalid Entry", () => {
-    //     expect(new Temperature("0")).toThrowError();
-    // });
 });
