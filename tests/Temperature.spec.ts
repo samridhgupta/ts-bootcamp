@@ -31,3 +31,20 @@ describe("Temperature: Converter", () => {
 // 4. Method per Conversion - CToF, FtoC
 // 5. toBaseUnit - still has if conditions
 // 6. DI with One Class per Temperature Un
+
+// Round 2
+// No Extends Keyword
+// Class Names:
+    // Should not end with or / er / tion(Convertor / Manager / Conversion)
+    // Should be a things(noun not verbs)
+    // Comment describing what the class does (later we can get rid of the comment)
+// No combinatorial explosion(Classes or Methods)
+// Avoid indecent exposure(instance variables should be private)
+// Embrace Immutability(instance variables should be final)
+// No If / Else logic(prefer dispatch - table or polymorphism and avoid procedural code)
+// Don’t break Encapsulation (Logic and Data together)
+    // No Getters or Setters
+// No Duplication(Literal, Semantic, Structural or Data)
+// Unit Test
+// Be Minimalistic(no surplus code)
+// Clean API(should be simple and intuitive for the caller)
