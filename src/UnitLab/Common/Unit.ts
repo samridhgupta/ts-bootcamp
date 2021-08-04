@@ -20,3 +20,10 @@ export class Unit {
         return new Unit(toUnit.amountForm(this.valueInBaseUnits), toUnit);
     }
 }
+
+
+export enum UNIT_TYPE {
+    TEMPERATURE,
+    LENGTH,
+    VOLUME
+}

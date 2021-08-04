@@ -1,8 +1,10 @@
 
 export class MetricType {
-    name: string; numberOfBaseUnits: number; offset: number;
-    constructor(name: string, numberOfBaseUnits: number, offset?: number) {
+    name: string; unitType: UNIT_TYPE; numberOfBaseUnits: number; offset: number;
+
+    constructor(name: string, unitType: UNIT_TYPE, numberOfBaseUnits: number, offset?: number) {
         this.name = name;
+        this.unitType = unitType;
         this.numberOfBaseUnits = numberOfBaseUnits;
         this.offset = offset || 0;
     }
@@ -10,8 +12,14 @@ export class MetricType {
         return (value - this.offset) * this.numberOfBaseUnits;
     }
     amountForm(valueInBaseUnits: number): number {
+
         return valueInBaseUnits / this.numberOfBaseUnits + this.offset;
     }
 }
 
+export enum UNIT_TYPE {
+    TEMPERATURE,
+    LENGTH,
+    VOLUME
+}
 
