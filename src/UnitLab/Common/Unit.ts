@@ -17,13 +17,7 @@ export class Unit {
     }
 
     in(toUnit: MetricType): Unit {
-        return new Unit(toUnit.amountForm(this.valueInBaseUnits), toUnit);
+        return new Unit(toUnit.amountForm(this.valueInBaseUnits, this.metricType.unitType), toUnit);
     }
 }
 
-
-export enum UNIT_TYPE {
-    TEMPERATURE,
-    LENGTH,
-    VOLUME
-}

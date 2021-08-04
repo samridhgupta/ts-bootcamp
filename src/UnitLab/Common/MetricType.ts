@@ -11,8 +11,10 @@ export class MetricType {
     inBaseUnits(value: number): number {
         return (value - this.offset) * this.numberOfBaseUnits;
     }
-    amountForm(valueInBaseUnits: number): number {
-
+    amountForm(valueInBaseUnits: number, toUnitType: UNIT_TYPE): number {
+        if (this.unitType !== toUnitType) {
+            throw new Error("Invalid Conversion");
+        }
         return valueInBaseUnits / this.numberOfBaseUnits + this.offset;
     }
 }
@@ -23,3 +25,4 @@ export enum UNIT_TYPE {
     VOLUME
 }
 
+/// Externalise the Constants
