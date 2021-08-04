@@ -1,21 +1,8 @@
-
-export class LengthMetricType {
-    name: string; multiplier: number;
-    constructor(name: string, multiplier: number) {
-        this.name = name;
-        this.multiplier = multiplier;
-    }
-    inBaseUnits(value: number): number {
-        return (value * this.multiplier);
-    }
-    amountForm(valueInBaseUnits: number): number {
-        return valueInBaseUnits / this.multiplier;
-    }
-}
+import { MetricType } from "../Common/MetricType";
 
 // Library of LengthMetricType
-export const INCH = new LengthMetricType("in", 1);
-export const FEET = new LengthMetricType("ft", 12);
-export const YARD = new LengthMetricType("yr", 36);
-export const MILE = new LengthMetricType("mi", 63360);
+export const INCH = new MetricType("in", 1);
+export const FEET = new MetricType("ft", 12);
+export const YARD = new MetricType("yr", 36);
+export const MILE = new MetricType("mi", 63360);
 

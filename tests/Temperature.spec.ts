@@ -2,8 +2,7 @@
 // 0C = 32 F
 // -40C = -40 F
 // 212 F = 100C
-
-import { TemperatureUnit } from "../src/UnitLab/Temperature/TemperatureUnit";
+import { Unit } from "../src/UnitLab/Common/Unit";
 import { CELSIUS, FAHRENHEIT } from "../src/UnitLab/Temperature/TemperatureMetricType";
 
 
@@ -77,6 +76,6 @@ import { CELSIUS, FAHRENHEIT } from "../src/UnitLab/Temperature/TemperatureMetri
 
 describe("Temperature:2 Converter", () => {
     test("Convert 0C to F = 32F", () => {
-        expect(new TemperatureUnit(0, CELSIUS).in(FAHRENHEIT)).toEqual(new TemperatureUnit(32, FAHRENHEIT));
+        expect(new Unit(0, CELSIUS).in(FAHRENHEIT)).toEqual(new Unit(32, FAHRENHEIT));
     });
 });
