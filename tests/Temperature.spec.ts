@@ -3,8 +3,8 @@
 // -40C = -40 F
 // 212 F = 100C
 
-import { TemperatureUnit } from "../src/Temperature/TemperatureUnit";
-import { CELSIUS, FAHRENHEIT } from "../src/Temperature/TemperatureMetricType";
+import { TemperatureUnit } from "../src/UnitLab/Temperature/TemperatureUnit";
+import { CELSIUS, FAHRENHEIT } from "../src/UnitLab/Temperature/TemperatureMetricType";
 
 
 // describe("Temperature: Converter", () => {
