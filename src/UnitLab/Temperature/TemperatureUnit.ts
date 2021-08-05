@@ -2,7 +2,7 @@
 
 // Composition = Square HasA Rectangle = Black-Box reuse
 
-import { TemperatureMetricType } from "./TemperatureMetricType";
+// import { TemperatureMetricType } from "./TemperatureMetricType";
 
 
 // type MetricType 
@@ -32,18 +32,21 @@ import { TemperatureMetricType } from "./TemperatureMetricType";
 
 // Updated 
 
-export class TemperatureUnit {
-    value: number;
-    metricType: TemperatureMetricType;
-    valueInBaseUnits: number;
+// export class TemperatureUnit {
+//     value: number;
+//     metricType: TemperatureMetricType;
+//     valueInBaseUnits: number;
 
-    constructor(value: number, metricType: TemperatureMetricType) {
-        this.value = value;
-        this.metricType = metricType;
-        this.valueInBaseUnits = metricType.inBaseUnits(value);
-    }
+//     constructor(value: number, metricType: TemperatureMetricType) {
+//         this.value = value;
+//         this.metricType = metricType;
+//         this.valueInBaseUnits = metricType.inBaseUnits(value);
+//     }
 
-    in(toUnit: TemperatureMetricType): TemperatureUnit {
-        return new TemperatureUnit(toUnit.amountForm(this.valueInBaseUnits), toUnit);
-    }
-}
+//     in(toUnit: TemperatureMetricType): TemperatureUnit {
+//         return new TemperatureUnit(toUnit.amountForm(this.valueInBaseUnits), toUnit);
+//     }
+// }
+
+
+// Can comment as duplicate of the Unit
