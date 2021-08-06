@@ -18,9 +18,9 @@ describe("Playing Card: Compare", () => {
     });
 
 
-    // test("3 Heart and 3 Spade get =  3 Spade", () => {
-    //     expect(new Card(CardRank.THREE, SPADE)
-    //         .compare(new Card(CardRank.THREE, HEART)))
-    //         .toEqual(new Card(CardRank.THREE, SPADE));
-    // });
+    test("3 Heart and 3 Spade get =  3 Spade", () => {
+        expect(new Card(CardRank.THREE, SPADE)
+            .compare(new Card(CardRank.THREE, HEART)))
+            .toEqual(new Card(CardRank.THREE, SPADE));
+    });
 });
